@@ -1,0 +1,54 @@
+.mobile-nav-wrapper {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 320px;
+    z-index: 10;
+    padding: 30px 20px;
+    background-color: rgb(68, 82, 82);
+    color: rgb(225, 235, 243);
+
+    a {
+        color: #FFF;
+    }
+
+    &--open {
+        display: block;
+    }
+
+}
+
+.mobile-nav-header {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255,  0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    flex-grow: 0.9;
+    padding-right:20px ;
+    border-right: 1px solid rgba(255, 255, 255,  0.2);
+}
+
+.mobile-nav {
+    display: grid;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.mobile-sub-nav {
+    padding: 20px 0 0 20px;
+    display: grid;
+    gap: 14px;
+    font-size: 16px;
+}

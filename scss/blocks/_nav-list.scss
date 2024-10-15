@@ -1,0 +1,55 @@
+.nav-list {
+    align-self: center;
+    justify-self: center;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+
+   
+    @include tablet() {
+        display: none;
+    }
+} 
+
+.nav-list__item {
+    position: relative;
+}
+
+.nav-list__link {
+  
+    transition: opacity 0.1s ease-in;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &--dropdown {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+        &::after {
+           content: url('./../img/nav.svg');
+           height: 18px;
+          
+        }
+    }
+}
+
+.nav-list__sub-nav {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    transform: translate(0%, 10%);
+    pointer-events: none;
+    transition: all 0.2s ease-in;
+}
+
+.nav-list__item:hover .nav-list__sub-nav {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(0%, 0%);
+}

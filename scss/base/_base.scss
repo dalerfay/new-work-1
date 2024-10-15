@@ -1,0 +1,28 @@
+
+html, body {
+    color: (--text-color);
+}
+
+
+
+.container {
+    max-width: 1310px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    &__small {
+        max-width: 1094px;
+    }
+}
+
+
+
+.none {
+    display: none !important;
+}
+
+.title-2 {
+    font-size:clamp(32px, 1.702rem + 1.49vw, 42px);
+    font-weight: 700;
+}
+

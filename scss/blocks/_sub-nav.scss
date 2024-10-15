@@ -1,0 +1,14 @@
+
+.sub-nav {
+    display: grid;
+    gap: 5px;
+    padding: 10px;
+
+    a {
+        color: #fff;
+
+        &:hover {
+           opacity: 0.8;
+        }
+    }
+}
